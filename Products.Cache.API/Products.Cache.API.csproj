@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MassTransit" Version="8.1.0" />
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.10"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.10" />
+        <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="7.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="7.0.10" />
+        <PackageReference Include="NetSwissTools" Version="1.0.2" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.4" />
+        <PackageReference Include="StackExchange.Redis" Version="2.6.122" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
+
+    </ItemGroup>
+
+
+
+
+</Project>
